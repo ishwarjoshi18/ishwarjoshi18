@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="ISHWAR JOSHI">
+  <defs><style>
+  @keyframes glowPulse { 0%,100% { opacity:.72; } 50% { opacity:1; } }
+  @keyframes drift { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-4px); } }
+  @keyframes sweep { 0% { stroke-dashoffset:180; } 100% { stroke-dashoffset:0; } }
+  rect[stroke="url(#line)"] { animation:glowPulse 3.2s ease-in-out infinite; }
+  circle { animation:glowPulse 4s ease-in-out infinite; }
+  text { animation:drift 5s ease-in-out infinite; }
+  path { stroke-dasharray:180; animation:sweep 6s linear infinite; }
+  @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+</style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b16"/><stop offset="1" stop-color="#101b35"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#247bff"/><stop offset="1" stop-color="#ff354f"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="100%" height="100%" rx="24" fill="url(#bg)" stroke="#183d72" stroke-width="2"/>
+  <rect x="2" y="2" width="996" height="236" rx="22" fill="none" stroke="url(#line)" stroke-width="2" opacity=".85"/>
+  <circle cx="930" cy="55" r="28" fill="none" stroke="#247bff" opacity=".25"/>
+  <path d="M30 72 H965" stroke="#247bff" opacity=".28"/>
+  <text x="38" y="53" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="29" font-weight="700">ISHWAR JOSHI</text>
+  <text x="40" y="91" fill="#7fc3ff" font-family="Arial, sans-serif" font-size="17">Software Developer  •  AI Enthusiast  •  B.Tech CSE Student</text>
+  <text x="42" y="155" fill="#f4f7ff" font-family="Arial" font-size="25">Learning &amp; Innovating 🚀</text>
+  <text x="42" y="202" fill="#a9b9d6" font-family="Arial" font-size="17">Building useful ideas with Python, AI and creative problem-solving.</text>
+  <g transform="translate(720 115)" fill="none" stroke="#247bff" stroke-width="3" filter="url(#glow)"><circle r="55"/><circle r="38" opacity=".55"/><path d="M-72 0H72 M0 -72V72"/></g>
+  <text x="720" y="124" text-anchor="middle" fill="#7fc3ff" font-family="Arial" font-size="28" font-weight="bold">AI</text>
+</svg>
